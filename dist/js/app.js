@@ -1,8 +1,4 @@
-import {Negociacao} from "./models/Neogicacao"
-
-
+import { Negociacao } from "./models/negociacao.js";
 // utilizar oque foi importado 
-
-const negociaca = new Negociacao(new Date(), 10, 100);
-
-console.log(negociaca.data)
+const negociaca = new Negociacao(new Date());
+console.log(negociaca.data);
