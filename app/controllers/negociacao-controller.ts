@@ -1,9 +1,11 @@
 import { Negociacao } from "../models/negociacao.js";
 
 export class NegociacaoController {
-    private inputData;
-    private inputQuantidade;
-    private inputValor;
+
+    // HTMLInputElement significa que o dado está vindo de um input que está dentro de um form
+    private inputData: HTMLInputElement;
+    private inputQuantidade: HTMLInputElement;
+    private inputValor: HTMLInputElement;
 
     constructor(){
         this.inputData = document.querySelector('#data');
