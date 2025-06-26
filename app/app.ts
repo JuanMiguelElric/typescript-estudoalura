@@ -1,8 +1,13 @@
-import { Negociacao } from "./models/negociacao.js"
-// utilizar oque foi importado 
+import { NegociacaoController } from "./controllers/negociacao-controller.js";
 
-const negociaca = new Negociacao(new Date());
 
-console.log(negociaca.data)
+const controller = new NegociacaoController();
+ const form = document.querySelector('.form');
 
-alert('oi')
+
+ //toda vez que submeter esse form vai chamar o metodo adiciona
+ form.addEventListener('submit', event =>{
+    //impede que a pagina se auto carregue 
+    event.preventDefault();
+    controller.adiciona();
+ })

@@ -1,5 +1,5 @@
 
-class Negociacao {
+export class Negociacao {
    private _data;
    private _quantidade;
    private _valor;
